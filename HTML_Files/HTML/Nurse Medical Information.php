@@ -97,6 +97,11 @@ html{
 }    
     </style>
 </head>
+<?php
+if($_SESSION["userrole"] != "nurse"){
+header('Location: garbage.html');
+}
+?>
     <body>
       <header>
             <nav>

@@ -10,11 +10,23 @@
     <link href="PersonalInfo.css" rel="stylesheet">
     </head>
     <body>
+<?php
+if($_SESSION["userrole"] != "nurse" and $_SESSION["userrole"] != "doctor" and $_SESSION["userrole"] != "patient"){
+header('Location: garbage.html');
+}
+?>
 	<header>
             <nav>
                 <ul>
                     <li><a href="PersonalInfo.php"><?php echo $_SESSION["username"];?></a></li>
-                    <li><a href="<?php if($_SESSION["userrole"] == "nurse"){echo "NurseHome.php";} elseif($_SESSION["userrole"] == "doctor"){echo "DoctorHome.php";}else{echo "index.html";}?>">Home</a></li>
+                    <li><a href="<?php if($_SESSION["userrole"] == "nurse")
+                            {echo "NurseHome.php";} 
+			elseif($_SESSION["userrole"] == "doctor")
+			    {echo "DoctorHome.php";} 
+			elseif($_SESSION["userrole"] == "patient")
+                            {echo "PatientPage.php";} 
+			else
+                            {echo "index.html";}?>">Home</a></li>
                     <li><a href="Logout.php"><?php echo $_SESSION["status"];?></a></li>
                     <li><a href="About%20Page.html">About</a></li>
                 </ul>

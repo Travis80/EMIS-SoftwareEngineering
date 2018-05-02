@@ -9,6 +9,11 @@ session_start();
     <link rel="icon" href="images/Medical-Cross-Symbol.png" alt="ICON">
     <link href="Doctor.css" rel="stylesheet">
 </head>
+<?php
+if($_SESSION["userrole"] != "doctor"){
+header('Location: garbage.html');
+}
+?>
     <body>
         <header>
             <nav>

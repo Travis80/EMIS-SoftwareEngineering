@@ -31,7 +31,7 @@ if($timestamp === false) {
     $timestamp = time();
 }
 
-$today = date('Y-m-d', time());
+$today = date('Y-m-j', time());
 
 $html_title = date('Y / m', $timestamp);
 
@@ -97,6 +97,11 @@ for ( $day = 1; $day <= $day_count; $day++, $str++){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="AppointmentViewer.css">
 </head>
+<?php
+if($_SESSION["userrole"] != "nurse" and $_SESSION["userrole"] != "doctor"){
+header('Location: garbage.html');
+}
+?>
      <header>
             <nav>
                 <ul>

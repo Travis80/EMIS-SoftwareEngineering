@@ -79,6 +79,11 @@ html{
 }    
     </style>
 </head>
+<?php
+if($_SESSION["userrole"] != "nurse" and $_SESSION["userrole"] != "doctor" and $_SESSION["userrole"] != "patient"){
+header('Location: garbage.html');
+}
+?>
     <body>
     <?php
     $height = $weight = $bloodType = $allergies = $medications = $valid = "";

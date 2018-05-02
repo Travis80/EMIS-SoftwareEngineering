@@ -38,6 +38,7 @@ session_start();
                 $sql = "INSERT INTO Contact (text) VALUES('$text')";
                 $conn->query($sql);
                 $valid = false;
+		header('Location: PatientConfirm.html');
             }
         }
         ?>

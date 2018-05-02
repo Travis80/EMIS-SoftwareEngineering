@@ -82,7 +82,7 @@ html{
             </nav>
           <img src="images/300x300.png">
         </header>
-        <form autocomplete="off">
+        <form autocomplete="off" action="PatientConfirm.html">
         <section>Insurance Company:</section>
         <input type="text" name="insurance"><br>
         <section>Card Number:</section>
