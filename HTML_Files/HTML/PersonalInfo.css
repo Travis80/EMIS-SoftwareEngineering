@@ -1,0 +1,84 @@
+header nav{
+    background:rgba(211,211,211,0.9);
+    height:62px;
+    box-shadow:0 0 10px rgba(0,0,0,0.25);
+}
+header nav ul{
+    margin:0;
+    list-style:none;
+    padding:0;
+    float:right;
+    display:flex;
+}
+header nav ul li a{
+    float:left;
+    line-height:62px;
+    padding: 0 15px;
+    color:black;
+    text-decoration: none;
+    font-weight:650;
+}
+header nav ul li a:hover{
+    font-weight: 900;
+}
+header img{
+    margin:0;
+    position:relative;
+    top:10px;
+    left:50%;
+    margin-left:-150px;
+}
+header{
+    margin:0;
+}
+h1{
+    position:absolute;
+    left:10%;
+}
+form{
+    position:absolute;
+    top:250px;
+    left: 50%;
+    margin-left:-400px;
+}
+form input[name="Address"]{
+    width: 400px;
+}
+form input[name="city"]{
+    width: 180px;
+}
+form input[name="state"]{
+    width: 50px;
+}
+form input[name="zip"]{
+    width: 100px;
+}
+form input[name="phone"]{
+    width: 180px;
+}
+form input[name="email"]{
+    width: 350px;
+}
+form input[type="text"]{
+    font-size:13pt;
+    padding:0;
+}
+form input[type="submit"]{
+    font-size:14pt;
+    width:100px;
+    height:30px;
+    border-radius:15pt;
+    background: white;
+    border:solid 2px #008CBA;
+}
+form input[type="submit"]:hover{
+    background-color: #008CBA;
+    color:white;
+}
+body{
+    height:100%;
+    font-family: "Arial", sans-serif;
+}
+html{
+    height:100%;
+}
