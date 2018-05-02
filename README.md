@@ -1,4 +1,4 @@
-# EMIS-SoftwareEngineering
+# Instructions
 Emergency Medical Information System
 
 How to use the EMIS:
